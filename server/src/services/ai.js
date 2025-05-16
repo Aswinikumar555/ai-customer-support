@@ -1,10 +1,10 @@
-
+\
 const axios = require('axios');
 
 class AIService {
   constructor() {
     // Hardcode the API key directly
-    this.apiKey = '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';
+    this.apiKey = process.env.OPENROUTER_API_KEY;
     this.baseURL = 'https://openrouter.ai/api/v1';
     console.log('Using hardcoded API key in AIService constructor');
   }
